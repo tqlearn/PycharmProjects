@@ -1,0 +1,13 @@
+{
+        "client": "pc_browser",
+        "app_id": "6fe5bcee",
+        "third_party_user_id": "1123",
+        "access_token": "access:6fe5bcee:b0f395020ccc7407",
+        "package_check": "package_check",
+        "room_id": "",
+        "type": "service_im",
+        "channel_id": "ch_f33d2d54",
+        "no_audit": "1",
+        "body": {"type":"text","text_content":"二等分"},
+        "context": {"nickname": "吴明阳", "role_name": "2", "replyMsg": {}, "atList": [], "roleNameText": {}}
+    }
