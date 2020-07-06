@@ -1,0 +1,29 @@
+{
+  "/laohuangli/d": {
+    "errorCode": 1006,
+    "errorDesc": "token error",
+    "status": 200,
+    "data": {
+      "banner": 1
+    }
+  },
+  "feed/topic.json": {
+    "errorCode": 1006,
+    "errorDesc": "token error",
+    "status": 200,
+    "data": {
+      "name": "chengyanan"
+    }
+  },
+  "comment/create.json": {
+    "errorCode": 1006,
+    "errorDesc": "token error"
+  },
+  "api3/getcourseintro": {
+    "status": 0,
+    "data": "",
+    "errorCode": 1002,
+    "errorDesc": "\u6210\u529f",
+    "timestamp": 0
+  }
+}

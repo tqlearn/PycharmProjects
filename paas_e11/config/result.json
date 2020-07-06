@@ -1,0 +1,106 @@
+{
+  "http://v.juhe.cn/laohuangli/d": [
+    {"sucess": {
+      "reason": "successed",
+      "result": {
+        "id": "3444",
+        "yangli": "2019-09-09",
+        "yinli": "己亥(猪)年八月十一",
+        "wuxing": "大驿土 建执位",
+        "chongsha": "冲兔(癸卯)煞东",
+        "baiji": "己不破券二比并亡 酉不宴客醉坐颠狂",
+        "jishen": "天恩 官日 六仪 益後 除神 玉堂 鸣犬",
+        "yi": "祭祀 出行",
+        "xiongshen": "月建 小时 土府 月刑 厌对 五离 招摇",
+        "ji": "嫁娶 入宅 修造 动土 会亲友 破土"
+      },
+      "error_code": 0
+    }
+    },
+
+    {
+      "error": {
+        "resultcode": "112",
+        "reason": "超过每日可允许请求次数!",
+        "result": "None",
+        "error_code": 10012
+      }
+    }
+  ],
+  "/laohuangli/d": [
+    {
+      "sucess": {
+        "status": 0,
+        "data": {
+          "banner": [
+            {
+              "id": 1709,
+              "type": 6,
+              "type_id": 354,
+              "name": "Node.js开发仿知乎服务端 深入理解RESTful API",
+              "pic": "http://szimg.mukewang.com/5d0ed27508f7d96909000300.jpg",
+              "links": ""
+            }
+          ],
+          "pic": [
+            {
+              "pic": "http://www.imooc.com/static/img/andriod/pic/discover_day@3x.png",
+              "pic_night": "http://www.imooc.com/static/img/andriod/pic/discover_night@3x.png",
+              "type": 5
+            }
+          ]
+        },
+        "errorCode": 1000,
+        "errorDesc": "成功",
+        "timestamp": 0
+      }
+    },
+    {
+      "error": {
+        "status": 0,
+        "data": "",
+        "errorCode": 1002,
+        "errorDesc": "成功",
+        "timestamp": 0
+      }
+    }
+  ],
+  "api3/getcourseintro": [
+    {
+      "sucess": {
+        "status": 0,
+        "data": {
+          "banner": [
+            {
+              "id": 1709,
+              "type": 6,
+              "type_id": 354,
+              "name": "Node.js开发仿知乎服务端 深入理解RESTful API",
+              "pic": "http://szimg.mukewang.com/5d0ed27508f7d96909000300.jpg",
+              "links": ""
+            }
+          ],
+          "pic": [
+            {
+              "pic": "http://www.imooc.com/static/img/andriod/pic/discover_day@3x.png",
+              "pic_night": "http://www.imooc.com/static/img/andriod/pic/discover_night@3x.png",
+              "type": 5
+            }
+          ]
+        },
+        "errorCode": 1000,
+        "errorDesc": "成功",
+        "timestamp": 0
+      }
+    },
+    {
+      "error": {
+        "status": 0,
+        "data": "",
+        "errorCode": 1002,
+        "errorDesc": "成功",
+        "timestamp": 0
+      }
+    }
+  ]
+}
