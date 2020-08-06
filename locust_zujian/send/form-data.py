@@ -3,6 +3,7 @@
 使用python第三方库requests 发送content_type类型为 multipart/form-data 的请求
 '''
 import requests
+import json
 #方法一
 data = {
     "client": (None, "pc_browser"),
@@ -13,8 +14,8 @@ data = {
     "type": (None, "service_im"),
     "channel_id": (None, "ch_365cd1f3"),
     "no_audit": (None, "0"),
-    "body": (None, "{'type':'text','text_content':'1'}"),
-    "context": (None, "{'nickname':'tianqi','role_name':'1','replyMsg':{},'atList':[],'roleNameText':{'text':'主持人','type':'host'}}")
+    "body": (None, json.dumps({"type":"text","text_content":"1"})),
+    "context": (None, json.dumps({"nickname":"tianqi","role_name":"1","replyMsg":{},"atList":[],"roleNameText":{"text":"主持人","type":"host"}}))
 }
 response = requests.post(url="https://api.vhallyun.com/sdk/v2/message/send",files=data)
 print(response.json())
@@ -30,8 +31,8 @@ print(response.json())
 #     "type":"service_im",
 #     "channel_id":"ch_365cd1f3",
 #     "no_audit":"0",
-#     "body": "{'type':'text','text_content':'1'}",
-#     "context": "{'nickname':'tianqi','role_name':'1','replyMsg':{},'atList':[],'roleNameText':{'text':'主持人','type':'host'}}"
+#     "body": (None, json.dumps({"type":"text","text_content":"1"})),
+#     "context": (None, json.dumps({"nickname":"tianqi","role_name":"1","replyMsg":{},"atList":[],"roleNameText":{"text":"主持人","type":"host"}}))
 # })
 # header = {"Content-Type":m.content_type}
 # response = requests.post(url="https://api.vhallyun.com/sdk/v2/message/send",data=m,headers=header)
