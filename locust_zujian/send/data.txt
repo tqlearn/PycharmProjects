@@ -1,0 +1,41 @@
+------WebKitFormBoundaryUxGryjpPnr8AVzAR
+Content-Disposition: form-data; name="client"
+
+pc_browser
+------WebKitFormBoundaryUxGryjpPnr8AVzAR
+Content-Disposition: form-data; name="app_id"
+
+8db72bdb
+------WebKitFormBoundaryUxGryjpPnr8AVzAR
+Content-Disposition: form-data; name="third_party_user_id"
+
+55
+------WebKitFormBoundaryUxGryjpPnr8AVzAR
+Content-Disposition: form-data; name="access_token"
+
+access:8db72bdb:368c083e448ff2f9
+------WebKitFormBoundaryUxGryjpPnr8AVzAR
+Content-Disposition: form-data; name="package_check"
+
+package_check
+------WebKitFormBoundaryUxGryjpPnr8AVzAR
+Content-Disposition: form-data; name="type"
+
+service_im
+------WebKitFormBoundaryUxGryjpPnr8AVzAR
+Content-Disposition: form-data; name="channel_id"
+
+ch_ed5680f8
+------WebKitFormBoundaryUxGryjpPnr8AVzAR
+Content-Disposition: form-data; name="no_audit"
+
+0
+------WebKitFormBoundaryUxGryjpPnr8AVzAR
+Content-Disposition: form-data; name="body"
+
+{"type":"text","text_content":"英雄联盟"}
+------WebKitFormBoundaryUxGryjpPnr8AVzAR
+Content-Disposition: form-data; name="context"
+
+{"nickname":"线上回归","role_name":"1","replyMsg":{},"atList":[],"roleNameText":{"text":"主持人","type":"host"}}
+------WebKitFormBoundaryUxGryjpPnr8AVzAR--
