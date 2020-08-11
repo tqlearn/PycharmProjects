@@ -15,16 +15,18 @@ class Message(TaskSet):
     @task()
     def send_message(self):
         value = self.locust.queuevalue.get_nowait()
+        print(value)
+
         data = {
             "client": (None, "pc_browser"),
             "app_id": (None, "af314787"),
-            "third_party_user_id": (None, "1611"),
-            "access_token": (None, "access:af314787:7eaf668dc39ab733"),
+            "third_party_user_id": (None, "1743"),
+            "access_token": (None, "access:af314787:385d509ea0f59eaf"),
             "package_check": (None, "package_check"),
             "type": (None, "service_im"),
-            "channel_id": (None, "ch_365cd1f3"),
+            "channel_id": (None, "ch_9ee539a0"),
             "no_audit": (None, "0"),
-            "body": (None, json.dumps({'type':'text','text_content':value})),
+            "body": (None, json.dumps({'type':'text','text_content': value})),
             "context": (None, json.dumps({'nickname':'tianqi','role_name':'1','replyMsg':{},'atList':[],'roleNameText':{'text':'主持人','type':'host'}}))
         }
 
@@ -35,6 +37,7 @@ class Message(TaskSet):
                 response.failure("断言失败")
                 print(response.text.encode('utf-8').decode('unicode_escape'))
 
+        self.locust.queuevalue.put_nowait(value) #------------------
 
 
 class locust_User(HttpLocust):
@@ -42,8 +45,8 @@ class locust_User(HttpLocust):
     wait_time = between(1,1)
     host = "https://api.vhallyun.com"
 
-    queuevalue = queue.Queue()
-    for i in range(1,201):
+    queuevalue = queue.Queue() #
+    for i in range(1,301):
         queuevalue.put_nowait("第 " + str(i) + " 条消息")
 
 

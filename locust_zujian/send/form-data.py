@@ -17,8 +17,10 @@ data = {
     "body": (None, json.dumps({"type":"text","text_content":"1"})),
     "context": (None, json.dumps({"nickname":"tianqi","role_name":"1","replyMsg":{},"atList":[],"roleNameText":{"text":"主持人","type":"host"}}))
 }
-response = requests.post(url="https://api.vhallyun.com/sdk/v2/message/send",files=data)
-print(response.json())
+for i in range(1500):
+    response = requests.post(url="https://api.vhallyun.com/sdk/v2/message/send",files=data)
+    print(i)
+# print(response.json())
 
 #方法二
 # from requests_toolbelt import MultipartEncoder

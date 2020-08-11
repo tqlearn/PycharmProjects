@@ -14,6 +14,7 @@ def send_message():
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36",
         "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryUxGryjpPnr8AVzAR"
     }
+
     with requests.post(url="https://api.vhallyun.com/sdk/v2/message/send",data=data,headers=header) as response:
         if "200" in response.text:
             print("成功")
